@@ -1,61 +1,42 @@
-🌌 LyraNet – Exoplanet Candidate Detection with Responsible AI
+# 🌌 LyraNet – Exoplanet Candidate Detection with Responsible AI  
 
-LyraNet is an AI-driven framework for exoplanet detection using stellar flux time series. The project benchmarks multiple methods for anomaly detection and candidate classification, while adhering to Responsible and Explainable AI principles.
+LyraNet is an AI-driven framework for **exoplanet detection** using stellar flux time series. The project benchmarks multiple methods for **anomaly detection** and **candidate classification**, while adhering to **Responsible and Explainable AI** principles.  
 
-✨ Project Overview
+## ✨ Project Overview  
 
-Exoplanet discovery relies on analyzing stellar light curves (FLUX time series) for periodic dips caused by planetary transits. LyraNet automates this process with two main stages:
+Exoplanet discovery relies on analyzing stellar light curves (FLUX time series) for periodic dips caused by planetary transits. LyraNet automates this process with two main stages:  
 
-Anomaly Detection (Flux Analysis & Candidate Detection)
+1. **Anomaly Detection (Flux Analysis & Candidate Detection)**  
+   - **PCA Reconstruction**  
+   - **PCA Mahalanobis Distance**  
+   - **Autoencoders**  
 
-PCA Reconstruction
+2. **Candidate Classification (Confirmed vs False Positives)**  
+   - **Random Forest**  
+   - **Histogram-based Gradient Boosting (HistGB)**  
+   - **CatBoost**  
+   - **XGBoost**  
 
-PCA Mahalanobis Distance
+## 📊 Features  
 
-Autoencoders
+- **Flux Preprocessing**: Denoising, normalization, and candidate signal detection.  
+- **Benchmark Models**: Multiple anomaly detection & classification algorithms compared.  
+- **Visualizations**:  
+  - Flux reconstructions  
+  - Residuals & anomalies  
+  - Confusion matrices & ROC curves  
+- **Explainability**:  
+  - **Feature Importance** (tree-based models)  
+  - **SHAP analysis** for local and global interpretability  
+- **Responsible AI**: Transparent workflows, interpretable models, and reproducible experiments.  
 
-Candidate Classification (Confirmed vs False Positives)
+## 🛠️ Tech Stack  
 
-Random Forest
+- **Python**  
+- **Scikit-learn** (PCA, Random Forest, HistGB)  
+- **CatBoost, XGBoost**  
+- **TensorFlow / PyTorch** (Autoencoders)  
+- **SHAP** (Explainability)  
+- **Matplotlib / Seaborn** (Visualizations)  
+## 📂 Repository Structure  
 
-Histogram-based Gradient Boosting (HistGB)
-
-CatBoost
-
-XGBoost
-
-📊 Features
-
-Flux Preprocessing: Denoising, normalization, and candidate signal detection.
-
-Benchmark Models: Multiple anomaly detection & classification algorithms compared.
-
-Visualizations:
-
-Flux reconstructions
-
-Residuals & anomalies
-
-Confusion matrices & ROC curves
-
-Explainability:
-
-Feature Importance (tree-based models)
-
-SHAP analysis for local and global interpretability
-
-Responsible AI: Transparent workflows, interpretable models, and reproducible experiments.
-
-🛠️ Tech Stack
-
-Python
-
-Scikit-learn (PCA, Random Forest, HistGB)
-
-CatBoost, XGBoost
-
-TensorFlow / PyTorch (Autoencoders)
-
-SHAP (Explainability)
-
-Matplotlib / Seaborn (Visualizations)
