@@ -38,5 +38,3 @@ Exoplanet discovery relies on analyzing stellar light curves (FLUX time series) 
 - **TensorFlow / PyTorch** (Autoencoders)  
 - **SHAP** (Explainability)  
 - **Matplotlib / Seaborn** (Visualizations)  
-## 📂 Repository Structure  
-
